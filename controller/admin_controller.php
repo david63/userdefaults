@@ -129,7 +129,7 @@ class admin_controller implements admin_interface
 		$dateformat_options .= '</select>';
 
 		// Create the topic & post display options
-	   	$sort_dir_text = array('a' => $this->language->lang('ASCENDING'), 'd' => $this->language->lang('DESCENDING'));
+		$sort_dir_text = array('a' => $this->language->lang('ASCENDING'), 'd' => $this->language->lang('DESCENDING'));
 
 		// Topic ordering options
 		$limit_topic_days = array(0 => $this->language->lang('ALL_TOPICS'), 1 => $this->language->lang('1_DAY'), 7 => $this->language->lang('7_DAYS'), 14 => $this->language->lang('2_WEEKS'), 30 => $this->language->lang('1_MONTH'), 90 => $this->language->lang('3_MONTHS'), 180 => $this->language->lang('6_MONTHS'), 365 => $this->language->lang('1_YEAR'));
@@ -243,7 +243,7 @@ class admin_controller implements admin_interface
 		$this->config->set('ud_allow_viewemail', $this->request->variable('ud_allow_viewemail', 0));
 		$this->config->set('ud_date_format', $this->request->variable('ud_date_format', ''));
 		$this->config->set('ud_moderation_queue', $this->request->variable('ud_moderation_queue', 0));
-	   	$this->config->set('ud_notify', $this->request->variable('ud_notify', ''));
+		$this->config->set('ud_notify', $this->request->variable('ud_notify', ''));
 		$this->config->set('ud_notify_pm', $this->request->variable('ud_notify_pm', ''));
 		$this->config->set('ud_options', phpbb_optionset(constants::ATTACHSIG, $this->request->variable('ud_sig', 0), $this->config['ud_options']));
 		$this->config->set('ud_options', phpbb_optionset(constants::BBCODE, $this->request->variable('ud_bbcode', 0), $this->config['ud_options']));
