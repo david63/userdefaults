@@ -1,0 +1,47 @@
+imports:
+    - { resource: phpbb_tables.yml }
+
+services:
+    david63.userdefaults.listener:
+        class: david63\userdefaults\event\listener
+        arguments:
+            - '@config'
+            - '%udconstants%'
+        tags:
+            - { name: event.listener }
+
+    david63.userdefaults.admin.controller:
+        class: david63\userdefaults\controller\admin_controller
+        arguments:
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '@log'
+            - '@language'
+            - '@dbal.conn'
+            - '@david63.userdefaults.core.functions'
+            - '%tables%'
+            - '%udconstants%'
+
+    david63.userdefaults.core.functions:
+        class: david63\userdefaults\core\functions
+        arguments:
+            - '@ext.manager'
+
+parameters:
+    udconstants:
+        form_key: 'user_defaults'
+
+        notification: 0
+        email: 1
+
+        viewimg: 0
+        viewflash: 1
+        viewsmilies: 2
+        viewsigs: 3
+        viewavatars: 4
+        viewcensors: 5
+        attachsig: 6
+        bbcode: 8
+        smilies: 9
