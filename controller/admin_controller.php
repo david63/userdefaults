@@ -245,6 +245,17 @@ class admin_controller implements admin_interface
 		$this->config->set('ud_moderation_queue', $this->request->variable('ud_moderation_queue', 0));
 		$this->config->set('ud_notify', $this->request->variable('ud_notify', ''));
 		$this->config->set('ud_notify_pm', $this->request->variable('ud_notify_pm', ''));
+/*
+		$this->config->set('ud_options', phpbb_optionset(constants::ATTACHSIG, $this->request->variable('ud_sig', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::BBCODE, $this->request->variable('ud_bbcode', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::SMILIES, $this->request->variable('ud1_smilies', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWAVATARS, $this->request->variable('ud_avatars', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWCENSORS, $this->request->variable('ud_wordcensor', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWFLASH, $this->request->variable('ud_flash', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWIMG, $this->request->variable('ud_images', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWSIGS, $this->request->variable('ud_sigs', 0), $this->config['ud_options']));
+		$this->config->set('ud_options', phpbb_optionset(constants::VIEWSMILIES, $this->request->variable('ud_smilies', 0), $this->config['ud_options']));
+*/
 		$this->config->set('ud_options', phpbb_optionset($this->constants['attachsig'], $this->request->variable('ud_sig', 0), $this->config['ud_options']));
 		$this->config->set('ud_options', phpbb_optionset($this->constants['bbcode'], $this->request->variable('ud_bbcode', 0), $this->config['ud_options']));
 		$this->config->set('ud_options', phpbb_optionset($this->constants['smilies'], $this->request->variable('ud_smilies', 0), $this->config['ud_options']));
