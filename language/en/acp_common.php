@@ -20,7 +20,7 @@ if (empty($lang) || !is_array($lang))
 	$lang = array();
 }
 
-/// DEVELOPERS PLEASE NOTE
+// DEVELOPERS PLEASE NOTE
 //
 // All language files should use UTF-8 as their encoding and the files must not contain a BOM.
 //
@@ -36,16 +36,19 @@ if (empty($lang) || !is_array($lang))
 // ’ » “ ” …
 //
 
-$lang = array_merge($lang, [
-	'EXT_ENABLE_ERROR' => 'This extension requires phpBB 3.3.0 (or greater).',
-]);
 
-/**
-* Translators ignore this.
-*
-* Overwrite core error message keys with a more specific message.
-*/
 $lang = array_merge($lang, array(
-	'EXTENSION_NOT_ENABLEABLE' 		=> isset($lang['EXTENSION_NOT_ENABLEABLE']) ? $lang['EXTENSION_NOT_ENABLEABLE'] . '<br><br><strong>' . $lang['EXT_ENABLE_ERROR'] . '</strong>' : null,
-	'CLI_EXTENSION_ENABLE_FAILURE' 	=> isset($lang['CLI_EXTENSION_ENABLE_FAILURE']) ? $lang['CLI_EXTENSION_ENABLE_FAILURE'] . ' : ' . $lang['EXT_ENABLE_ERROR'] : null,
+	'DONATE'					=> 'Donate',
+	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
+	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
+
+	'NEW_VERSION'				=> 'New Version - %s',
+	'NEW_VERSION_EXPLAIN'		=> 'Version %1$s of this extension is now available for download.<br>%2$s',
+	'NEW_VERSION_LINK'			=> 'Download here',
+	'NO_VERSION_EXPLAIN'		=> 'Version update information is not available.',
+
+	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
+	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
+
+	'VERSION'					=> 'Version',
 ));

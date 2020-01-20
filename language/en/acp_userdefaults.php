@@ -3,7 +3,7 @@
 *
 * @package User Defaults Extension
 * @copyright (c) 2016 david63
-* * @license GNU General Public License, version 2 (GPL-2.0)
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 
@@ -67,8 +67,6 @@ $lang = array_merge($lang, array(
 	'MODERATOR_NOTIFICATIONS'	=> 'Moderation Notifications',
 	'MODERATOR_REPORT'			=> 'Someone reports a post',
 
-	'NEW_VERSION'				=> 'New Version',
-	'NEW_VERSION_EXPLAIN'		=> 'There is a newer version of this extension available.',
 	'NOTIFICATION'				=> 'Notification',
 
 	'POSTING_NOTIFICATIONS'		=> 'Posting notifications',
@@ -89,7 +87,6 @@ $lang = array_merge($lang, array(
 	'USER_NOTIFY'				=> 'Notify the user upon replies by default',
 	'USER_NOTIFY_PM'			=> 'User notify PM',
 
-	'VERSION'					=> 'Version',
 	'VIEW_AVATARS'				=> 'Display avatars',
 	'VIEW_FLASH'				=> 'Display Flash animations',
 	'VIEW_IMAGES'				=> 'Display images within posts',
@@ -101,14 +98,4 @@ $lang = array_merge($lang, array(
 	'VIEW_TOPICS_DAYS' 			=> 'Display topics from previous days',
 	'VIEW_TOPICS_DIR' 			=> 'Display topic order direction',
 	'VIEW_TOPICS_KEY' 			=> 'Display topics ordering by',
-));
-
-// Donate
-$lang = array_merge($lang, array(
-	'DONATE'					=> 'Donate',
-	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
-	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
-
-	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
-	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
 ));

@@ -1,5 +1,4 @@
 imports:
-    - { resource: phpbb_tables.yml }
     - { resource: ud_constants.yml }
 
 services:

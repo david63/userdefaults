@@ -3,7 +3,7 @@
 *
 * @package User Defaults Extension
 * @copyright (c) 2016 david63
-* * @license GNU General Public License, version 2 (GPL-2.0)
+* @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
 

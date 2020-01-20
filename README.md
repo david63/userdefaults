@@ -7,10 +7,11 @@ Allows an Admin to set the default user settings for new users.
 [![Latest Stable Version](https://poser.pugx.org/david63/userdefaults/v/stable)](https://packagist.org/packages/david63/userdefaults)
 [![Latest Unstable Version](https://poser.pugx.org/david63/userdefaults/v/unstable)](https://packagist.org/packages/david63/userdefaults)
 [![Total Downloads](https://poser.pugx.org/david63/userdefaults/downloads)](https://packagist.org/packages/david63/userdefaults)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1f251a53969b429aba3a0b0cb20818cd)](https://www.codacy.com/manual/david63/userdefaults?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=david63/userdefaults&amp;utm_campaign=Badge_Grade)
 
 ## Minimum Requirements
-* phpBB 3.2.0
-* PHP 5.4
+* phpBB 3.3.0
+* PHP 7.1.3
 
 ## Install
 1. [Download the latest release](https://github.com/david63/userdefaults/archive/3.2.zip) and unzip it.
@@ -30,4 +31,4 @@ Allows an Admin to set the default user settings for new users.
 ## License
 [GNU General Public License v2](http://opensource.org/licenses/GPL-2.0)
 
-© 2019 - David Wood
+© 2020 - David Wood
