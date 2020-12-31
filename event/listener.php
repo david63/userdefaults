@@ -65,7 +65,7 @@ class listener implements EventSubscriberInterface
 	public function modify_user_defaults($event)
 	{
 		// Set the required notifications
-		$notifications_data = array();
+		$notifications_data = [];
 
 		if ($this->config['ud_moderation_queue'] != $this->constants['notification'])
 		{

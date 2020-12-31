@@ -28,3 +28,6 @@ services:
         class: david63\userdefaults\core\functions
         arguments:
             - '@ext.manager'
+
+    _defaults:
+        public: true
